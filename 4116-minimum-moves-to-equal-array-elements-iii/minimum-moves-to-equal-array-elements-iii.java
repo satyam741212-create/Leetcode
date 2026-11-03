@@ -8,10 +8,7 @@ class Solution {
         }
         int count=0;
         for(int i=0;i<nums.length;i++){
-                while(nums[i]<max){
-                    nums[i]++;
-                   count++;    
-                }
+               count +=max-nums[i];  
         }
         return count;
     }
